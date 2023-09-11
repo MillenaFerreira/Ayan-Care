@@ -6,6 +6,8 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.Visibility
+import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -58,12 +60,12 @@ fun TextFieldPassword(label : String, valor: String, aoMudar: (String) -> Unit )
                 Icon(
                     imageVector =
                     if(passwordVisibilityState){
-                        Icons.Default.FavoriteBorder
+                        Icons.Default.Visibility
                     } else {
-                        Icons.Default.Favorite
+                        Icons.Default.VisibilityOff
                     },
                     contentDescription = null,
-                    tint = Color.Blue
+                    tint = Color(0xFFA7A5A4)
 
                 )
             }

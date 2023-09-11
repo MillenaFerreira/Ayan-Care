@@ -15,6 +15,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import br.senai.sp.jandira.ayancare.components.ButtonPadrao
 import br.senai.sp.jandira.ayancare.components.CaixaDeTexto
+import br.senai.sp.jandira.ayancare.confirmacaoEmail.screen.ConfirmacaoEmailScreen
+import br.senai.sp.jandira.ayancare.finalizarCadastro.screen.FinalizarCadastroScreen
 import br.senai.sp.jandira.ayancare.login.screen.LoginScreen
 import br.senai.sp.jandira.ayancare.telaHome1.screen.TelaHome1Screen
 import br.senai.sp.jandira.ayancare.telaHome2.screen.TelaHome2Screen
@@ -35,7 +37,9 @@ class MainActivity : ComponentActivity() {
                     //TelaHome1Screen()
                     //TelaHome2Screen()
                     //TelaHome3Screen()
-                    LoginScreen()
+                    //LoginScreen()
+                    //FinalizarCadastroScreen()
+                    ConfirmacaoEmailScreen()
                 }
             }
         }
