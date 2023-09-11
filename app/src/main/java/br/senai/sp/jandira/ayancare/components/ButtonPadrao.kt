@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.sp
 
 fun ButtonPadrao(
     text: String,
-    onClick: () -> Unit
+    onClick: () -> Unit,
 ) {
     Box(
         modifier = Modifier
@@ -40,8 +40,6 @@ fun ButtonPadrao(
             fontWeight = FontWeight(600),
             color = Color(0xFFFFFEFE),
         )
-
-
     }
 
     

@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import br.senai.sp.jandira.ayancare.components.ButtonPadrao
 import br.senai.sp.jandira.ayancare.components.CaixaDeTexto
+import br.senai.sp.jandira.ayancare.login.screen.LoginScreen
 import br.senai.sp.jandira.ayancare.telaHome1.screen.TelaHome1Screen
 import br.senai.sp.jandira.ayancare.telaHome2.screen.TelaHome2Screen
 import br.senai.sp.jandira.ayancare.telaHome3.screen.TelaHome3Screen
@@ -27,16 +28,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             AyanCareTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    //color = Color(53, 34, 95)
-                    //modifier = Modifier.fillMaxSize()
-                ) {
-//                    ButtonPadrao(text = "Entrar", onClick = {})
-                    CaixaDeTexto(valor = "dooas", label = "Entrar") {}
-                    TelaPrincipalScreen()
+                Surface {
+                    //ButtonPadrao(text = "Entrar", onClick = {})
+                    //CaixaDeTexto(valor = "dooas", label = "Entrar") {}
+                    //TelaPrincipalScreen()
                     //TelaHome1Screen()
                     //TelaHome2Screen()
                     //TelaHome3Screen()
+                    LoginScreen()
                 }
             }
         }
